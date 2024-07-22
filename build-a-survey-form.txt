@@ -1,0 +1,133 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please complete this short survey to help with our market research.</p>
+  <form id="survey-form">
+    <fieldset>
+    <label for="name" id="name-label">Name 
+      <input id="name" type="text" placeholder="Enter your name..." required/>
+    </label>
+    <label for="email" id="email-label">Email
+      <input id="email" required placeholder="Enter your email" type="email"/>
+    </label>
+    <label for="number" id="number-label">Favourite Number? 
+      <input id="number" type="number" placeholder="What's your favourite number..." min="1" max="10"/>
+    </label>
+    <label for="dropdown">What is your dream holiday location?
+      <select id="dropdown">
+        <option value="">Select one</option>
+        <option value="1">USA</option>
+        <option value="2">Maldives</option>
+        <option value="3">Iceland</option>
+        <option value="4">Greece</option>
+        <option value="5">Egypt</option>
+      </select>
+    </label>
+    </fieldset>
+    <fieldset>
+      <legend>Select your Gender (required)</legend>
+    <label for="gender-male">
+      <input id="black" class="inline" name="gender" type="radio" value="male" checked/>Male
+    </label>
+    <label for="gender-female">
+      <input id="gender-female" class="inline" name="gender" type="radio" value="female"/>Female
+    </label>
+    <label for="gender-other">
+      <input id="gender-other" class="inline" name="gender" type="radio" value="other"/>Other
+    </label>
+    <label for="gender-not-disclosed">
+      <input id="gender-not-disclosed" class="inline" name="gender" type="radio" value="Prefer not to say"/>Prefer not to say
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>What are your biggest fears? (select all that apply)</legend>
+    <label for="fears-heights"><input value="heights" class="inline" type="checkbox" id="fears-heights"/>Heights</label>
+    <label for="fears-spiders"><input value="spiders" class="inline" type="checkbox" id="fears-spiders"/>Spiders</label>
+    <label for="fears-public-speaking"><input value="public speaking" class="inline" type="checkbox" id="fears-public-speaking"/>Public Speaking</label>
+    <label for="fears-outside"><input value="outside" class="inline" type="checkbox" id="fears-outside"/>Outside</label>
+    <label for="fears-13"><input value="the number 13" class="inline" type="checkbox" id="fears-13"/>The number 13</label>
+    <label for="fears-birds"><input value="birds" class="inline" type="checkbox" id="fears-birds"/>Birds</label>
+    <label for="fears-long-words"><input value="long words" class="inline" type="checkbox" id="fears-long-words"/>Long words</label>
+</fieldset>
+<label for="comments"><textarea id="comments" rows=5 cols=49>Any comments to add about your experience...</textarea></label>
+  <input id="submit" type="submit" value="Submit" />
+</form>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  background-color:#0d0d0d;
+  color:#f2eade;
+  font-size:16px;
+  font-family: Sans Serif;
+}
+
+label{
+  display:block;
+  margin:0.5rem 0;
+}
+
+input[type="radio"]{
+  color:black;
+}
+input,select, textarea{
+  width:100%;
+  min-height: 2em;
+  margin:10px 0 0 0;
+  background-color:#f2ebde;
+  border:1px solid#f2ebde;
+}
+
+.inline{
+  width:unset;
+  vertical-align:middle;
+  margin:0 0.5em 0 0;
+}
+h1{
+  color: #a78444;
+  text-align: center;
+  margin:1em auto;
+  padding-bottom:2rem;
+}
+p{
+  text-align:center;
+}
+fieldset{
+  border:none;
+  border-bottom: 3px solid #3e3636;
+  padding:2rem 0;
+}
+input[type="submit"]{
+  display: block;
+  width:60%;
+  margin: 0 auto;
+  height:2em;
+  font-size: 1.1rem;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+fieldset:last-of-type{
+  border-bottom: none;
+}
+textarea{
+  margin-bottom:10px;
+}
+
+** end of undefined **
+
