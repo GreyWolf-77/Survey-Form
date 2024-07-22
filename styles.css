@@ -43,10 +43,10 @@ fieldset{
 input[type="submit"]{
   display: block;
   width:60%;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
   height:2em;
   font-size: 1.1rem;
- padding-bottom:2rem; 
+
 }
 form {
   width: 60vw;
